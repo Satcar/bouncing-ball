@@ -12,11 +12,6 @@ body {
 }
 
 @keyframes bounce {
-    from {top: 0px;} 
-    to {top: 200px;}
-}
-
-@keyframes bounce {
     0% {
         top: 0;
         transform: scaleY(1) scaleX(1);
