@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border-radius: 100%;
+    position: relative;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    from {top: 0px;} 
+    to {top: 200px;}
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        transform: scaleY(1) scaleX(1);
+      }
+      50% {
+        top: 200px;
+        transform: scaleY(0.6) scaleX(1.1);
+      }
+      100% {
+        top: 0;
+        transform: scaleY(1) scaleX(1);
+      }
+}
