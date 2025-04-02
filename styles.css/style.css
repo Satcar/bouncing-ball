@@ -8,16 +8,21 @@ body {
     background-color: teal;
     border-radius: 100%;
     position: relative;
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce 1s ease-in-out infinite,
+               splash 1s ease-in-out infinite;
 }
 
 @keyframes bounce {
+  from {top: 0px;}
+  to {top: 500px}
+
+}
+
+@keyframes splash {
     0% {
-        top: 0;
         transform: scaleY(1) scaleX(1);
       }
       50% {
-        top: 200px;
         transform: scaleY(0.6) scaleX(1.1);
       }
       100% {
